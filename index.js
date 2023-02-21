@@ -23,7 +23,7 @@ let transporter = nodemailer.createTransport({
 });
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send(`I'm working!`)
 })
 
 app.post('/sendMessage', async (req, res) => {
@@ -48,7 +48,7 @@ app.post('/sendMessage', async (req, res) => {
 `, // html body
     });
 
-    res.send('Letter was send!')
+    res.send('Letter has been sent!')
 })
 
 app.listen(port, () => {
