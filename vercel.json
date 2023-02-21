@@ -3,14 +3,14 @@
   "name": "gmail-smtp",
   "builds": [
     {
-      "src": "package.json",
+      "src": "*.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "package.json"
+      "dest": "*.js"
     }
   ]
 }
